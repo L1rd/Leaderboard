@@ -1,22 +1,65 @@
 import { createTheme } from '@mui/material';
 import UploadBackgroundRight from 'assets/img/modal-background2.svg';
 import UploadBackgroundLeft from 'assets/img/modal-background.svg';
+import { COLORS } from 'utils/constants/mui/colors';
 
 export const theme = createTheme({
+	typography: {
+		h1: {
+			fontFamily: 'inherit',
+			fontWeight: 600,
+			fontSize: '22px',
+			lineHeight: '27px',
+			color: `${COLORS.darkBlue}`,
+		},
+		h2: {
+			fontFamily: 'inherit',
+			fontWeight: '500',
+			fontSize: '18px',
+			lineHeight: '22px',
+			color: `${COLORS.darkBlue}`,
+		},
+	},
+
 	components: {
 		MuiButton: {
+			variants: [
+				{
+				  props: { variant: 'orange' },
+				  style: {					 
+					border: `1px solid ${COLORS.orange}`,
+					background: `${COLORS.orange}`,
+					'&:hover': {
+						color: `${COLORS.orange}`,
+						background: "none",
+					},
+				  },
+				},
+				{
+					props: { variant: 'blue' },
+					style: {					 
+						border: `1px solid ${COLORS.blue}`,
+						background: `${COLORS.blue}`,
+						"&:hover": {
+							background: "none",
+							color: `${COLORS.blue}`,
+						}
+					},
+				 },
+			 ],
 			styleOverrides: {
 				root: {
-					width: '90px',
+					fontFamily: "'Montserrat', sans-serif",
+					fontStyle: 'normal',
+					fontWeight: '600',
+					fontSize: '10px',
+					lineHeight: '12px',
+					color: `${COLORS.white}`,
 					height: '25px',
-					color: 'white',
-					background: '#F99746',
+					padding: '6px 24px',
+					minWidth: '0px',
 					boxShadow: '0px 2px 8px rgba(249, 151, 70,  0.04)',
-					borderRadius: '10px',
-					'&:hover': {
-						color: '#F99746',
-						border: '1px solid #F99746',
-					},
+					borderRadius: '10px',					
 				},
 			},
 		},

@@ -42,7 +42,8 @@
 		"no-process-exit": "off",
 		"object-shorthand": "off",
 		"react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
-		"class-methods-use-this": "off"
+		"class-methods-use-this": "off",
+		"react/require-default-props": "off"
 	},
 	"settings": {
 		"import/resolver": {
