@@ -1,9 +1,14 @@
 import React, { FC } from 'react';
-import Button from '@mui/material/Button';
-import { ButtonBaseProps } from '@mui/material';
+import { Button, ButtonProps } from '@mui/material';
 
-interface CustomButtonProps extends ButtonBaseProps {
+declare module '@mui/material/Button' {
+	interface ButtonPropsVariantOverrides {
+	  orange: true;
+	  blue: true;
+	}
+ }
+interface CustomButtonProps extends ButtonProps {
 	label: string;
 }
 
-export const CustomButton: FC<CustomButtonProps> = ({ onClick, label }) => <Button onClick={onClick}>{label}</Button>;
+export const CustomButton: FC<CustomButtonProps> = ({ label, ...props }) => <Button {...props}>{label}</Button>;

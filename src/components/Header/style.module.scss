@@ -2,16 +2,7 @@
 @import 'assets/styles/variables';
 
 .title {
-	font-weight: 600;
-	font-size: 22px;
-	line-height: 27px;
-	color: $second-main-color;
-	margin: 23px 0 23px 15px;
-
-	& span {
-		@extend .title;
-		color: #f99746;
-	}
+	color: $fifth-main-color;
 }
 
 .header {
@@ -23,14 +14,7 @@
 	border-radius: 10px;
 	width: 100%;
 	height: 180px;
-
-	&__title {
-		font-weight: 600;
-		font-size: 22px;
-		line-height: 27px;
-		color: $main-color;
-		margin-bottom: 9px;
-	}
+	margin-bottom: 19px;
 
 	&__subtitle {
 		font-weight: 400;
@@ -47,6 +31,6 @@
 	}
 }
 
-.top_list {
+.list {
 	@include flex($justify: flex-start);
 }
