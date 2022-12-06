@@ -25,28 +25,28 @@ export const theme = createTheme({
 		MuiButton: {
 			variants: [
 				{
-				  props: { variant: 'orange' },
-				  style: {					 
-					border: `1px solid ${COLORS.orange}`,
-					background: `${COLORS.orange}`,
-					'&:hover': {
-						color: `${COLORS.orange}`,
-						background: "none",
+					props: { variant: 'orange' },
+					style: {
+						border: `1px solid ${COLORS.orange}`,
+						background: `${COLORS.orange}`,
+						'&:hover': {
+							color: `${COLORS.orange}`,
+							background: 'none',
+						},
 					},
-				  },
 				},
 				{
 					props: { variant: 'blue' },
-					style: {					 
+					style: {
 						border: `1px solid ${COLORS.blue}`,
 						background: `${COLORS.blue}`,
-						"&:hover": {
-							background: "none",
+						'&:hover': {
+							background: 'none',
 							color: `${COLORS.blue}`,
-						}
+						},
 					},
-				 },
-			 ],
+				},
+			],
 			styleOverrides: {
 				root: {
 					fontFamily: "'Montserrat', sans-serif",
@@ -59,7 +59,7 @@ export const theme = createTheme({
 					padding: '6px 24px',
 					minWidth: '0px',
 					boxShadow: '0px 2px 8px rgba(249, 151, 70,  0.04)',
-					borderRadius: '10px',					
+					borderRadius: '10px',
 				},
 			},
 		},

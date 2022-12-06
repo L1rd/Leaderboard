@@ -24,5 +24,10 @@
 		line-height: 22px;
 		color: $second-main-color;
 	}
-}
 
+	&__list {
+		overflow-y: scroll;
+		height: 586px;
+		padding-right: 10px;
+	}
+}
