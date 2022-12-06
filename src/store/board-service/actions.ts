@@ -1,14 +1,14 @@
 export enum LeaderBoardActions {
-	SET_USER_NAME = 'SET_USER_NAME',
-	SET_USER_SCORE = 'SET_USER_SCORE',
+	SET_USER_INFO = 'SET_USER_INFO',
+	EDIT_USER_INFO = 'EDIT_USER_INFO',
 }
 
-export const setUserName = (payload: string) => ({
-	type: LeaderBoardActions.SET_USER_NAME,
+export const setUserInfo = (payload: any) => ({
+	type: LeaderBoardActions.SET_USER_INFO,
 	payload,
 });
 
-export const setUserScore = (payload: number) => ({
-	type: LeaderBoardActions.SET_USER_SCORE,
+export const editUserInfo = (payload: any) => ({
+	type: LeaderBoardActions.EDIT_USER_INFO,
 	payload,
 });

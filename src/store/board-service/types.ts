@@ -1,13 +1,13 @@
 import { LeaderBoardActions } from './actions';
 
 interface ISetUserName {
-	type: typeof LeaderBoardActions.SET_USER_NAME;
-	payload: undefined;
+	type: typeof LeaderBoardActions.SET_USER_INFO;
+	payload: any;
 }
 
-interface ISetUserScore {
-	type: typeof LeaderBoardActions.SET_USER_SCORE;
-	payload: undefined;
+interface IEditUserInfo {
+	type: typeof LeaderBoardActions.EDIT_USER_INFO;
+	payload: any;
 }
 
-export type ActionTypes = ISetUserScore | ISetUserName;
+export type ActionTypes = IEditUserInfo | ISetUserName;
