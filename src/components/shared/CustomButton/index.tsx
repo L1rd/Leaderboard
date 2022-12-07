@@ -3,10 +3,10 @@ import { Button, ButtonProps } from '@mui/material';
 
 declare module '@mui/material/Button' {
 	interface ButtonPropsVariantOverrides {
-	  orange: true;
-	  blue: true;
+		orange: true;
+		blue: true;
 	}
- }
+}
 interface CustomButtonProps extends ButtonProps {
 	label: string;
 }
